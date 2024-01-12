@@ -1,0 +1,87 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/my_primary"
+    android:columnCount="2"
+    android:rowCount="2"
+    android:padding="4dp">
+
+    <!-- Imagem 1 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="@color/my_third"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:background="@color/my_primary"
+            android:src="@drawable/imagem1"
+            android:clickable="true"
+            android:onClick="onImageClick" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Imagem 2 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:background="@color/my_primary"
+            android:src="@drawable/imagem2"
+            android:clickable="true"
+            android:onClick="onImageClick" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Imagem 3 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:background="@color/my_primary"
+            android:src="@drawable/imagem3"
+            android:clickable="true"
+            android:onClick="onImageClick" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Imagem 4 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:background="@color/my_primary"
+            android:src="@drawable/imagem4"
+            android:clickable="true"
+            android:onClick="onImageClick" />
+
+    </androidx.cardview.widget.CardView>
+
+</GridLayout>
