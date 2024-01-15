@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Pringles"
         tools:targetApi="31">
         <activity
+            android:name=".MachineDashboardActivity"
+            android:exported="false" />
+        <activity
             android:name=".MachineActivity"
             android:exported="false" />
         <activity
