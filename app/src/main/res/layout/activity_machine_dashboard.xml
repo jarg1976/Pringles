@@ -7,12 +7,6 @@ android:layout_height="match_parent"
 tools:context=".MachineDashboardActivity"
     android:background="@color/my_third">
 
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/my_third"
-    android:alpha="0.5" />
-
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -38,7 +32,8 @@ tools:context=".MachineDashboardActivity"
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
 
         <TextView
             android:id="@+id/textView_balance_label"
@@ -47,17 +42,17 @@ tools:context=".MachineDashboardActivity"
             android:layout_weight="1"
             android:textColor="@color/my_secondary"
             android:textSize="20sp"
-            android:layout_gravity="center"
+            android:gravity="center"
             android:text="Balance:" />
         <TextView
-            android:id="@+id/textView_balance"
+            android:id="@+id/textView_balance_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textColor="@color/my_secondary"
-            android:textSize="20sp"
-            android:layout_gravity="center"
-            android:text="Balance:" />
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="" />
     </LinearLayout>
 </LinearLayout>
 
@@ -96,22 +91,42 @@ tools:context=".MachineDashboardActivity"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:layout_marginTop="10dp"
+            android:gravity="center"
             android:layout_marginBottom="10dp" >
 
-            <ImageView
+            <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="150dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/imagem1"
-                android:scaleType="centerInside"/>
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/imagem1"
+                    android:scaleType="centerInside"/>
 
-            <!-- Imagem 2 -->
-            <ImageView
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView" />
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="150dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/imagem2"
-                android:scaleType="centerInside"/>
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/imagem2"
+                    android:scaleType="centerInside"/>
+            </LinearLayout>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -119,20 +134,32 @@ tools:context=".MachineDashboardActivity"
             android:orientation="horizontal"
             android:layout_marginBottom="10dp">
 
-            <ImageView
+            <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="150dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/imagem1"
-                android:scaleType="centerInside"/>
-
-            <!-- Imagem 2 -->
-            <ImageView
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/imagem3"
+                    android:scaleType="centerInside"/>
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="150dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/imagem2"
-                android:scaleType="centerInside"/>
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/imagem4"
+                    android:scaleType="centerInside"/>
+            </LinearLayout>
         </LinearLayout>
 
         <TextView
